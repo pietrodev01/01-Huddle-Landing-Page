@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+}
+
+/********** Fonts **********/
+
+h1 {
+  font-family: "poppins", sans-serif;
+  font-weight: 600;
+  font-size: clamp(25px, 4.5vw, 45px);
+  color: white;
+}
+
+p {
+  color: white;
+}
+
+p,
+a {
+  font-family: "open sans", sans-serif;
+  line-height: 140%;
+}
+/********** Landing Page **********/
+
+body {
+  background-color: hsl(257, 40%, 49%);
+}
+
+.logo-img img {
+  width: max(18%, 140px);
+  margin-top: 25px;
+  margin-left: 25px;
+  /* border: 2px solid yellow; */
+}
+
+.background-img img {
+  width: 100%;
+  position: absolute;
+  top: -10px;
+  left: 10px;
+
+  z-index: -1;
+}
+
+header.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: start;
+  gap: 50px;
+  margin-top: 60px;
+}
+
+.header-img {
+  width: min(90%, 700px);
+}
+
+.header-img img {
+  width: 100%;
+}
+
+.header-text {
+  margin-top: 40px;
+  width: min(80%, 520px);
+}
+
+.header-text p {
+  margin-bottom: 36px;
+}
+
+.header-text a {
+  text-decoration: none;
+  color: hsl(257, 40%, 49%);
+  background-color: white;
+  padding: 18px 100px;
+  border-radius: 24px;
+}
+
+.header-text a:hover {
+  background-color: hsl(300, 69%, 71%);
+  color: white;
+}
+
+@media (max-width: 1286px) {
+  header.flex {
+    gap: 0px;
+    text-align: center;
+  }
+
+  .background-img img {
+    content: url(images/bg-mobile.svg);
+    width: 100%;
+    position: absolute;
+    top: 20px;
+    left: -10px;
+    transform: scale(1.1);
+    z-index: -1;
+  }
+}
